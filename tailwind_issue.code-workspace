@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "name": "ROOT",
+            "path": "./"
+        },
+    ],
+    "settings": {
+        /* tailwind */
+        "tailwindCSS.experimental.classRegex": [
+            [
+                // find the inner part in every "class: [inner_part]"
+                "class:\\s*\\[((?:[^[\\]]|\\[(?:[^[\\]]|\\[[^[\\]]*\\])*])*?)\\]",
+                // find every string from the previous results
+                "(?:['\"`]([^'\"`]*)['\"`])"
+            ]
+        ],
+    }
+}
